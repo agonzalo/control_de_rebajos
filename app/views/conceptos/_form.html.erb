@@ -1,0 +1,37 @@
+<%= form_for(@concepto) do |f| %>
+  <% if @concepto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@concepto.errors.count, "error") %> prohibited this concepto from being saved:</h2>
+
+      <ul>
+      <% @concepto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :monto_total %><br />
+    <%= f.text_field :monto_total %>
+  </div>
+  <div class="field">
+    <%= f.label :frecuencia %><br />
+    <%= f.number_field :frecuencia %>
+  </div>
+  <div class="field">
+    <%= f.label :monto_actual %><br />
+    <%= f.text_field :monto_actual %>
+  </div>
+  <div class="field">
+    <%= f.label :colaborador %><br />
+    <%= f.text_field :colaborador %>
+  </div>
+  <div class="field">
+    <%= f.label :rebajo %><br />
+    <%= f.text_field :rebajo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @colaborador.nombre %>
+</p>
+
+<p>
+  <b>Salario por hora:</b>
+  <%= @colaborador.salario_por_hora %>
+</p>
+
+<p>
+  <b>Horas por quincena:</b>
+  <%= @colaborador.horas_por_quincena %>
+</p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @colaborador.codigo %>
+</p>
+
+<p>
+  <b>Cedula:</b>
+  <%= @colaborador.cedula %>
+</p>
+
+<p>
+  <b>Fecha de ingreso:</b>
+  <%= @colaborador.fecha_de_ingreso %>
+</p>
+
+<p>
+  <b>Fecha de nacimiento:</b>
+  <%= @colaborador.fecha_de_nacimiento %>
+</p>
+
+<p>
+  <b>Concepto:</b>
+  <%= @colaborador.concepto %>
+</p>
+
+
+<%= link_to 'Edit', edit_colaborador_path(@colaborador) %> |
+<%= link_to 'Back', colaboradors_path %>

@@ -1,0 +1,5 @@
+Rails generate scaffold Colaborador nombre:String salario_por_hora:float horas_por_quincena:integer codigo:String cedula:String fecha_de_ingreso:date fecha_de_nacimiento:date concepto:references
+
+Rails generate scaffold Concepto monto_total:float frecuencia:integer monto_actual:float colaborador:references rebajo:references
+
+Rails generate model Rebajo fecha:date monto:float concepto:references

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  monto_total: 1.5
+  frecuencia: 1
+  monto_actual: 1.5
+  colaborador: 
+  rebajo: 
+
+two:
+  monto_total: 1.5
+  frecuencia: 1
+  monto_actual: 1.5
+  colaborador: 
+  rebajo: 

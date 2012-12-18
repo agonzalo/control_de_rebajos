@@ -1,0 +1,37 @@
+<h1>Listing colaboradors</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Salario por hora</th>
+    <th>Horas por quincena</th>
+    <th>Codigo</th>
+    <th>Cedula</th>
+    <th>Fecha de ingreso</th>
+    <th>Fecha de nacimiento</th>
+    <th>Concepto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @colaboradors.each do |colaborador| %>
+  <tr>
+    <td><%= colaborador.nombre %></td>
+    <td><%= colaborador.salario_por_hora %></td>
+    <td><%= colaborador.horas_por_quincena %></td>
+    <td><%= colaborador.codigo %></td>
+    <td><%= colaborador.cedula %></td>
+    <td><%= colaborador.fecha_de_ingreso %></td>
+    <td><%= colaborador.fecha_de_nacimiento %></td>
+    <td><%= colaborador.concepto %></td>
+    <td><%= link_to 'Show', colaborador %></td>
+    <td><%= link_to 'Edit', edit_colaborador_path(colaborador) %></td>
+    <td><%= link_to 'Destroy', colaborador, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Colaborador', new_colaborador_path %>

@@ -1,0 +1,31 @@
+<h1>Listing conceptos</h1>
+
+<table>
+  <tr>
+    <th>Monto total</th>
+    <th>Frecuencia</th>
+    <th>Monto actual</th>
+    <th>Colaborador</th>
+    <th>Rebajo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @conceptos.each do |concepto| %>
+  <tr>
+    <td><%= concepto.monto_total %></td>
+    <td><%= concepto.frecuencia %></td>
+    <td><%= concepto.monto_actual %></td>
+    <td><%= concepto.colaborador %></td>
+    <td><%= concepto.rebajo %></td>
+    <td><%= link_to 'Show', concepto %></td>
+    <td><%= link_to 'Edit', edit_concepto_path(concepto) %></td>
+    <td><%= link_to 'Destroy', concepto, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Concepto', new_concepto_path %>

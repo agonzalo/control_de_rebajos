@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Monto total:</b>
+  <%= @concepto.monto_total %>
+</p>
+
+<p>
+  <b>Frecuencia:</b>
+  <%= @concepto.frecuencia %>
+</p>
+
+<p>
+  <b>Monto actual:</b>
+  <%= @concepto.monto_actual %>
+</p>
+
+<p>
+  <b>Colaborador:</b>
+  <%= @concepto.colaborador %>
+</p>
+
+<p>
+  <b>Rebajo:</b>
+  <%= @concepto.rebajo %>
+</p>
+
+
+<%= link_to 'Edit', edit_concepto_path(@concepto) %> |
+<%= link_to 'Back', conceptos_path %>

@@ -1,0 +1,49 @@
+<%= form_for(@colaborador) do |f| %>
+  <% if @colaborador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@colaborador.errors.count, "error") %> prohibited this colaborador from being saved:</h2>
+
+      <ul>
+      <% @colaborador.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :salario_por_hora %><br />
+    <%= f.text_field :salario_por_hora %>
+  </div>
+  <div class="field">
+    <%= f.label :horas_por_quincena %><br />
+    <%= f.number_field :horas_por_quincena %>
+  </div>
+  <div class="field">
+    <%= f.label :codigo %><br />
+    <%= f.text_field :codigo %>
+  </div>
+  <div class="field">
+    <%= f.label :cedula %><br />
+    <%= f.text_field :cedula %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_de_ingreso %><br />
+    <%= f.date_select :fecha_de_ingreso %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_de_nacimiento %><br />
+    <%= f.date_select :fecha_de_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :concepto %><br />
+    <%= f.text_field :concepto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

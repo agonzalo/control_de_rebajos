@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: 
+  salario_por_hora: 1.5
+  horas_por_quincena: 1
+  codigo: 
+  cedula: 
+  fecha_de_ingreso: 2012-12-18
+  fecha_de_nacimiento: 2012-12-18
+  concepto: 
+
+two:
+  nombre: 
+  salario_por_hora: 1.5
+  horas_por_quincena: 1
+  codigo: 
+  cedula: 
+  fecha_de_ingreso: 2012-12-18
+  fecha_de_nacimiento: 2012-12-18
+  concepto: 
